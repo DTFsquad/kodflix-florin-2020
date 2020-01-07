@@ -1,11 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import MrRobot from './MrRobot.jpg';
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to Kodflix</h1> 
+      <img src={MrRobot} className='cover-img' alt='MR Robot show cover' />
     </div>
   );
 }
