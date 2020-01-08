@@ -16,3 +16,9 @@
   flex: 1;
   flex-basis: 100%;
 }
+
+@media only screen and (max-width: 640px) {
+  .cover-row-img {
+    display: block;
+  }
+}
