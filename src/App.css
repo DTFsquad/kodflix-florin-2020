@@ -15,6 +15,24 @@
 .cover-row-item-img {
   flex: 1;
   flex-basis: 100%;
+  position: relative;
+}
+
+.cover-row-item-img-overlay {
+  display: none;
+  position: absolute;
+  opacity: .5;
+  bottom: 0;
+  background-color: magenta;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cover-row-item-img:hover .cover-row-item-img-overlay {
+  display: block;
 }
 
 @media only screen and (max-width: 640px) {
