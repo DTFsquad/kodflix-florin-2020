@@ -13,24 +13,24 @@ function App() {
     <div className='App'>
       <div className='cover-row-img'>
         <div className='cover-row-item-img'>
-          <h1>Avatar</h1>
+          <img src={Avatar} alt='' />
         </div>
         <div className='cover-row-item-img'>
-          <h1>Captain America</h1>
+        <img src={CaptainAmerica} alt='' />
         </div>
         <div className='cover-row-item-img'>
-          <h1>Endgame</h1>
+        <img src={Endgame} alt='' />
         </div>
       </div>
       <div className='cover-row-img'>
         <div className='cover-row-item-img'>
-          <h1>Fast and Furios</h1>
+        <img src={FastandFurios} alt='' />
         </div>
         <div className='cover-row-item-img'>
-          <h1>Jack Ryan</h1>
+        <img src={JackRyan} alt='' />
         </div>
         <div className='cover-row-item-img'>
-          <h1>Kingsman</h1>
+        <img src={Kingsman} alt='' />
         </div>
       </div>
     </div>
