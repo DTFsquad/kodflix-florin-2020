@@ -1,58 +1,54 @@
-import React from 'react';
-
+import React, { Component } from 'react';
 import './App.css';
-import Avatar from './Avatar.jpeg';
-import CaptainAmerica from './CaptainAmerica.jpeg';
-import Endgame from './Endgame.jpeg';
-import FastandFurios from './FastandFurios.jpeg';
-import JackRyan from './JackRyan.jpeg';
-import Kingsman from './Kingsman.jpeg';
+import Cover from './cover/Cover';
+import Avatar from './cover/images/Avatar.jpeg';
+import CaptainAmerica from './cover/images/CaptainAmerica.jpeg';
+import Endgame from './cover/images/Endgame.jpeg';
+import FastandFurios from './cover/images/FastandFurios.jpeg';
+import JackRyan from './cover/images/JackRyan.jpeg';
+import Kingsman from './cover/images/Kingsman.jpeg';
 
-function App() {
-  return (
-    <div className='App'>
+class App extends Component {
+  render() {
+    return (
+     <div className='App'>
       <div className='cover-row-img'>
-        <div className='cover-row-item-img'>
-          <img src={Avatar} alt='' />
-          <div className='cover-row-item-img-overlay'>
-            <h1>Avatar</h1>
-          </div>
-        </div>
-        <div className='cover-row-item-img'>
-        <img src={CaptainAmerica} alt='' />
-        <div className='cover-row-item-img-overlay'>
-            <h1>Captain America</h1>
-        </div>
-        </div>
-        <div className='cover-row-item-img'>
-        <img src={Endgame} alt='' />
-        <div className='cover-row-item-img-overlay'>
-            <h1>Endgame</h1>
-        </div>
-        </div>
+        <Cover 
+          img={Avatar} 
+          title='Avatar' 
+          alt='Cover of Avatar movie' 
+        />
+        <Cover 
+          img={CaptainAmerica} 
+          title='Captain America' 
+          alt='Cover of Captain America movie' 
+        />
+        <Cover 
+          img={Endgame} 
+          title='Endgame' 
+          alt='Cover of Endgame movie' 
+        />
       </div>
       <div className='cover-row-img'>
-        <div className='cover-row-item-img'>
-        <img src={FastandFurios} alt='' />
-        <div className='cover-row-item-img-overlay'>
-            <h1>Fast and Furios</h1>
-        </div>
-        </div>
-        <div className='cover-row-item-img'>
-        <img src={JackRyan} alt='' />
-        <div className='cover-row-item-img-overlay'>
-            <h1>Jack Ryan</h1>
-        </div>
-        </div>
-        <div className='cover-row-item-img'>
-        <img src={Kingsman} alt='' />
-        <div className='cover-row-item-img-overlay'>
-            <h1>Kingsman</h1>
-        </div>
-        </div>
+        <Cover 
+          img={FastandFurios} 
+          title='Fast and Furios' 
+          alt='Cover of Fast and Furios movie' 
+        />
+        <Cover 
+          img={JackRyan} 
+          title='Jack Ryan' 
+          alt='Cover of Jack Ryan movie' 
+        />
+        <Cover 
+          img={Kingsman} 
+          title='Kingsman' 
+          alt='Cover of Kingsman movie' 
+        />
       </div>
     </div>
   );
+}
 }
 
 export default App;
