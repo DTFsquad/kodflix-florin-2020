@@ -2,17 +2,12 @@
     display: flex;
     width: 100%;
     flex: 1;
+    flex-wrap: wrap;
   }
 
   .cover {
+    flex: 1;
+    flex-basis: 300px;
     position: relative;
-    width: 100%;
     overflow: hidden;
 }
-
-  @media only screen and (max-width: 640px) {
-    .cover-row-img {
-      display: block;
-    }
-  }
-
