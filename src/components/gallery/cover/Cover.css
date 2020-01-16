@@ -3,7 +3,7 @@
     height: 100%;
 }
 .cover-row-item-img-overlay {
-  bottom: -100%;
+  bottom: -760%;
   position: absolute;
   opacity: .8;
   background-color: magenta;

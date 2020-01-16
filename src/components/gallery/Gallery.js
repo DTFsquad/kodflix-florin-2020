@@ -15,34 +15,40 @@ export default class App extends React.Component {
         <div className='cover-row-img'>
           <Cover 
             img={Avatar} 
-            title='Avatar' 
+            title='Avatar'
+            id='avatar' 
             alt='Cover of Avatar movie' 
           />
           <Cover 
             img={CaptainAmerica} 
-            title='Captain America' 
+            title='Captain America'
+            id='captainamerica' 
             alt='Cover of Captain America movie' 
           />
           <Cover 
             img={Endgame} 
-            title='Endgame' 
+            title='Endgame'
+            id='endgame' 
             alt='Cover of Endgame movie' 
           />
         </div>
         <div className='cover-row-img'>
           <Cover 
             img={FastandFurios} 
-            title='Fast and Furios' 
+            title='Fast and Furios'
+            id='fastandfurios' 
             alt='Cover of Fast and Furios movie' 
           />
           <Cover 
             img={JackRyan} 
-            title='Jack Ryan' 
+            title='Jack Ryan'
+            id='jackryan' 
             alt='Cover of Jack Ryan movie' 
           />
           <Cover 
             img={Kingsman} 
-            title='Kingsman' 
+            title='Kingsman'
+            id='kingsman' 
             alt='Cover of Kingsman movie' 
           />
         </div>

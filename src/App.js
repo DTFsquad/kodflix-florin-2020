@@ -4,8 +4,8 @@ import {
   Route } 
   from 'react-router-dom';
 import './App.css';
-import Gallery from './gallery/Gallery';
-import Details from './details/Details';
+import Gallery from './components/gallery/Gallery';
+import Details from './components/details/Details';
 
 export default class App extends Component {
   render() {
@@ -13,7 +13,7 @@ export default class App extends Component {
       <Router>
         <div className='App'>
           <Route exact path='/' component={Gallery} />
-          <Route path='/details' component={Details} />
+          <Route path='/:showId' component={Details} />
         </div>
       </Router>
     );
