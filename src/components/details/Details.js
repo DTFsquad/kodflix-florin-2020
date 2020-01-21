@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 export default class Details extends React.Component {
@@ -17,7 +18,8 @@ export default class Details extends React.Component {
     render() {
         return (
             <div>
-                <h1>(this.state.message)</h1>
+                <h1>{this.state.message}</h1>
+                <Link to='/'>Home</Link>
             </div>
         );
     }
