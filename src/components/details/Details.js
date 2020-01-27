@@ -1,5 +1,6 @@
 import React from 'react';
-import getShows from '../shows';
+// import getShows from '../shows';
+import { Link } from 'react-router-dom';
 
 
 export default class Details extends React.Component {
