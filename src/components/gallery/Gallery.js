@@ -1,20 +1,20 @@
 import React from 'react';
 import './Gallery.css';
 import Cover from './cover/Cover';
-import getGallery from './get-gallery';
+import getShows from '../shows';
 
 
 export default class App extends React.Component {
     render() {
       return (
         <div className='gallery'>
-          {getGallery().map(cover => {
+          {getShows().map(show => {
             return(
               <Cover 
-                image={cover.image}
-                key={cover.id}
-                id={cover.id}
-                title={cover.id}
+                image={show.image}
+                key={show.id}
+                id={show.id}
+                title={show.id}
               />
             );
           })}

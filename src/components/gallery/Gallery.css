@@ -1,13 +1,32 @@
-.cover-row-img {
+/* .cover-row-img {
     display: flex;
     width: 100%;
     flex: 1;
     flex-wrap: wrap;
-  }
+  } */
 
   .cover {
-    flex: 1;
-    flex-basis: 300px;
+    /* flex: 1; */
+    /* flex-basis: 300px; */
     position: relative;
     overflow: hidden;
+    width: 32%;
+}
+
+.gallery {
+  display: flex;
+  /* flex: 1; */
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+@media screen and (max-width: 640px) {
+  .cover {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .cover {
+    width: 20%;
+  }
 }

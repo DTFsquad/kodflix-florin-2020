@@ -1,11 +1,11 @@
-import avatar from './cover/images/Avatar.jpeg';
-import captainAmerica from './cover/images/CaptainAmerica.jpeg';
-import endgame from './cover/images/Endgame.jpeg';
-import fastandFurios from './cover/images/FastandFurios.jpeg';
-import jackRyan from './cover/images/JackRyan.jpeg';
-import kingsman from './cover/images/Kingsman.jpeg';
+import avatar from './gallery/cover/images/Avatar.jpeg';
+import captainAmerica from './gallery/cover/images/CaptainAmerica.jpeg';
+import endgame from './gallery/cover/images/Endgame.jpeg';
+import fastandFurios from './gallery/cover/images/FastandFurios.jpeg';
+import jackRyan from './gallery/cover/images/JackRyan.jpeg';
+import kingsman from './gallery/cover/images/Kingsman.jpeg';
 
-export default function getGallery() {
+export default function getShows() {
     return [{
             image: avatar,
             title: 'Avatar',

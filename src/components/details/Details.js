@@ -1,15 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import getShows from '../shows';
 
 
-export default function Details() {
-    return (
-        <div>
-            <h1>Details</h1>
+export default class Details extends React.Component {
+    constructor() {
+        super();
+        this.state = { show: {} };
+    }
+    
+    componentDidMount() {
+        let show = getShows()
+            .find(show => show.id ===
+                this.props.match.params.showId);
+            this.setState({ show });
+    }
+    render() {
+        return (
             <div>
-                <h3>Hello, this will be the details page for each Movie & TV show :)</h3>
-                <Link to='/'>Home</Link>
+                <h1>{this.state.show.title}</h1>
             </div>
-        </div>
-    );
+        );
+    }
 }
