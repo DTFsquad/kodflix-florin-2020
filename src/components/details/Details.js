@@ -5,20 +5,23 @@ import getShows from '../shows';
 export default class Details extends React.Component {
     constructor() {
         super();
-        this.state = { show: {} };
+        this.state = {
+            message: 'Hello, this will be the details page for each Movie & TV show :)'
+        };
     }
-    
+
     componentDidMount() {
-        let show = getShows()
-            .find(show => show.id ===
-                this.props.match.params.showId);
-            this.setState({ show });
+        setTimeout(() => {
+            this.setState({message: 'Coming soon...'});
+        }, 3000);
     }
     render() {
         return (
             <div>
-                <h1>{this.state.show.title}</h1>
+                <h1>{this.state.message}</h1>
+                <Link to='/'>Home</Link>
             </div>
         );
     }
+    
 }
