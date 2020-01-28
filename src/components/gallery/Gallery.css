@@ -1,13 +1,5 @@
-/* .cover-row-img {
-    display: flex;
-    width: 100%;
-    flex: 1;
-    flex-wrap: wrap;
-  } */
 
   .cover {
-    /* flex: 1; */
-    /* flex-basis: 300px; */
     position: relative;
     overflow: hidden;
     width: 32%;
@@ -15,7 +7,6 @@
 
 .gallery {
   display: flex;
-  /* flex: 1; */
   flex-wrap: wrap;
   align-items: flex-start;
 }

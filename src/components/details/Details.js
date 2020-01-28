@@ -1,28 +1,31 @@
 import React from 'react';
-// import getShows from '../shows';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
+import getShows from '../shows';
+
 
 
 export default class Details extends React.Component {
     constructor() {
         super();
-        this.state = {
-            message: 'Hello, this will be the details page for each Movie & TV show :)'
-        };
+        this.state = { show: {} };
     }
 
     componentDidMount() {
-        setTimeout(() => {
-            this.setState({message: 'Coming soon...'});
-        }, 3000);
+        let show = getShows()
+            .find(show => show.id ===
+                this.props.match.params.showId);
+            this.setState({ show });
     }
     render() {
         return (
-            <div>
-                <h1>{this.state.message}</h1>
-                <Link to='/'>Home</Link>
-            </div>
+            (this.state.show === undefined) ?
+                <Redirect to='/not-Found' /> :
+                <div>
+                    <h1>{this.state.show.title}</h1>
+                    <Link to='/'>Home</Link>
+                 </div>
         );
     }
     
+
 }
