@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-color:#2f333d;
+  color: white;
+  min-height: 100%;
   width: 100%;
 }
 

@@ -1,0 +1,23 @@
+.content-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 45px;
+}
+
+.content-details-synopsis {
+    padding-right: 35px;
+}
+
+.content-details-cover img {
+    max-width: 300px;
+}
+
+@media screen and (max-width: 640px) {
+    .content-details {
+        display: block;
+    }
+
+    .content-details-cover {
+        max-width: 100%;
+    }
+}

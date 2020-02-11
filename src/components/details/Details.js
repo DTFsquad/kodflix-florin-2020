@@ -17,11 +17,22 @@ export default class Details extends React.Component {
             this.setState({ show });
     }
     render() {
+        let show = this.state.show;
         return (
             (this.state.show === undefined) ?
                 <Redirect to='/not-Found' /> :
                 <div>
-                    <h1>{this.state.show.title}</h1>
+                    <div className='details'>
+                        <h1>{show.title}</h1>
+                        <div className='content-details'>
+                            <h3 className='content-details-synopsis'>
+                                {show.synopsis}
+                            </h3>
+                            <div className='content-details-cover'>
+                                <img src={show.image} alt=''/>
+                            </div>
+                        </div>
+                    </div>
                     <Link to='/'>Home</Link>
                  </div>
         );
